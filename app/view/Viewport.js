@@ -4,14 +4,15 @@ Ext.define('GK.view.Viewport', {
     
     config : {
         fullscreen : true,
-        layout : 'vbox',
-        items : [ 
-       
-        {
-            xtype : 'startpage',
-            flex : 1,
-            
+        layout : {
+          type : 'card'  ,
+          animation : { type : 'slide'}
         },
+        items : [ 
+        {
+         xtype : 'startpage',
+
+        }
         
         
         ]

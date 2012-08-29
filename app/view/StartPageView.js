@@ -1,7 +1,10 @@
 Ext.define('GK.view.StartPageView', {
     extend: 'Ext.Container',
     xtype  : 'startpage',
-    
+     requires: [
+    'GK.view.startpage.StartPageList',
+    'GK.view.startpage.StartPageHeader'
+    ],
     config : {
       
         layout : 'vbox',
@@ -10,11 +13,13 @@ Ext.define('GK.view.StartPageView', {
             xtype : 'startpageheader',
         },
         {
-            xtype : 'contentlist',
-            flex : 1
+            xtype : 'startpagelist',
+            flex : 1,
+           
         },
            {
             xtype : 'footer',
+
         }
         ]
 

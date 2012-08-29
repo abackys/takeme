@@ -3,26 +3,21 @@ Ext.define('GK.view.HeaderView', {
     xtype  : 'header',
     config : {
         layout: {
-            type: 'hbox',
-            align: 'center',
-            pack : 'center'
+            type: 'hbox'
+         //   align: 'center',
+         //   pack : 'center'
         },
         docked : 'top',
         items : [ 
         {
             xtype : 'image',
-            src : './images/back_ico.png',
-            heigh : 51,
-            width : 60,
+            src : './images/back_ico.jpg',
+            width : 50,
             docked : 'left',
             cls : 'header-back-img',
             action : 'back'
         },
-        {
-            xtype : 'container',
-            html : 'Naujienos',
-            cls : 'header-title'
-        },
+       
         {
             html: '<img src="./images/startpage_header.jpg">',
       //  cls : 'startpage-header-image',

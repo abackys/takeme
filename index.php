@@ -7,14 +7,13 @@
 
 
         <title>Take Me</title>
-        <link rel="stylesheet" href="./css/sencha-touch.css" type="text/css">
+        <link rel="stylesheet" href="./css/sencha_style.css" type="text/css">
 
         <link rel="stylesheet" href="./css/style.css" type="text/css">
         <script type="text/javascript" src="lib/ST2/sencha-touch-all-debug.js"></script>
          <script type="text/javascript" src="app.js"></script>
 
          <script> 
- //alert(55)
 </script>
     </head>
     <body>

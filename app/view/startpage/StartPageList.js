@@ -1,20 +1,22 @@
-Ext.define('GK.view.startpage.ContentListView', {
+Ext.define('GK.view.startpage.StartPageList', {
     extend: 'Ext.List',
-    xtype  : 'contentlist',
+    xtype  : 'startpagelist',
     
     config : {
         
-    itemTpl: '<span>{menuItem}<span>',
+    itemTpl: '<span>{menuItemText}<span>',
     data: [
-        { menuItem: 'BILIETAI' },
-        { menuItem: 'APIE' },
-        { menuItem: 'PRANEŠĖJAI' },
-        { menuItem: 'PROGRAMA' },
-        { menuItem: 'NAUJIENOS' },
-        { menuItem: 'DIRBTUVĖS' },
-        { menuItem: 'VAKARĖLIS' },
-        { menuItem: 'DIRBTUVĖS' }
-    ],
+        { menuItemText: 'BILIETAI', menuItem : 'tickets' },
+        { menuItemText: 'APIE', menuItem : 'about' },
+        { menuItemText: 'PRANEŠĖJAI', menuItem : 'speakers' },
+        { menuItemText: 'PROGRAMA', menuItem : 'schedule' },
+        { menuItemText: 'NAUJIENOS', menuItem : 'news' },
+        { menuItemText: 'DIRBTUVĖS', menuItem : 'workshops' },
+        { menuItemText: 'VAKARĖLIS', menuItem : 'party' },
+        { menuItemText: 'REMĖJAI', menuItem : 'sponsors' }
+     
+    ], 
+  
     style : 'margin-top: -5px;',
       disclosure: true,
 
@@ -22,7 +24,7 @@ Ext.define('GK.view.startpage.ContentListView', {
             //set the function when a user taps on a disclsoure icon
             onItemDisclosure: function(record, item, index, e) {
                 //show a messagebox alert which shows the persons firstName
-                e.stopEvent();
+            //    e.stopEvent();
           //      Ext.Msg.alert('Disclose', 'Disclose more info for ' + record.get('firstName'));
             }
       

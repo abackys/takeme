@@ -8,10 +8,11 @@ Ext.define('GK.controller.NewsController', {
         control : {
             'newslist' : {
                 itemtap : 'onItemTap'
+            },
+            'speakerslist' : {
+                itemtap : 'onItemTap'
             }
-       
         }
-    
     },
     init : function(){
      
@@ -29,9 +30,11 @@ Ext.define('GK.controller.NewsController', {
          // Using for ItemTap CSS'ing'
     ItemTapCSS : function(newComp, oldComp){
         
-        if(oldComp)
-           this.oldSelectedItem.removeCls('news-list-item-selected')
-        newComp.addCls('news-list-item-selected')
+        if(oldComp){
+           this.oldSelectedItem.removeCls('my-list-item-selected')
+           
+       }
+        newComp.addCls('my-list-item-selected')
        
         
     }
