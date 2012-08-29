@@ -18,6 +18,6 @@
 </script>
     </head>
     <body>
-
+    <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-503de1d1163388f3"></script>
     </body>
 </html> 

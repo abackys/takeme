@@ -8,7 +8,7 @@ Ext.define('GK.view.Viewport', {
         items : [ 
        
         {
-            xtype : 'startpage',
+            xtype : 'speakerpage',
             flex : 1,
             
         },
