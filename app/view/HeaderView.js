@@ -19,7 +19,7 @@ Ext.define('GK.view.HeaderView', {
         },
        
         {
-            html: '<img src="./images/startpage_header.jpg">',
+            html: '<img src="./images/header_logo.png">',
       //  cls : 'startpage-header-image',
             xtype : 'panel',
             cls : ['image-max-height'],

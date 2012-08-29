@@ -12,20 +12,15 @@ Ext.application({
   //  util :[ 'Date' ],
 
     models: [],
- //   stores: ['NewsStore'],
-    views : ['Viewport' ,  'SpeakersView', 'StartPageView', 'HeaderView',  'FooterView' , 'NewsView' , 'SponsorsView', 'SpeakerPageView'],
-    controllers : ['StartPageController',  'HeaderController', 'NewsController'],
-
-
-
+    stores: ['Speakers', 'News'],
+    controllers : ['StartPageController', 'SpeakersController', 'RoutingController', 'NewsController'],
+    views : ['Viewport' ,  'StartPageView', 'HeaderView',  'FooterView' , 'NewsView' , 'SponsorsView', 'SpeakersView', 'DetailsView', 'PartyView', 'AboutView'],
   
   launch: function() {
       
   GK.Viewport = Ext.create('GK.view.Viewport')
-
+ // console.log(Ext.getStore('News'))
  
-  
-
   
     }
 });

@@ -6,16 +6,24 @@ Ext.define('GK.view.StartPageView', {
     'GK.view.startpage.StartPageHeader'
     ],
     config : {
-      
+      scrollable: {
+    direction: 'vertical',
+},
         layout : 'vbox',
         items : [ 
         {
+            xtype : 'container',
+              
+            items : [
+                {
             xtype : 'startpageheader',
         },
         {
             xtype : 'startpagelist',
             flex : 1,
            
+        },
+            ]
         },
            {
             xtype : 'footer',
