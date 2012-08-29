@@ -11,7 +11,7 @@ Ext.application({
     viewport: {autoMaximize: true},
   //  util :[ 'Date' ],
     models: [],
-    stores: ['NewsStore'],
+ //   stores: ['NewsStore'],
     views : ['Viewport' ,  'SpeakersView', 'StartPageView', 'HeaderView',  'FooterView' , 'NewsView' , 'SponsorsView'],
     controllers : ['StartPageController', 'RoutingController', 'HeaderController', 'NewsController'],
   
