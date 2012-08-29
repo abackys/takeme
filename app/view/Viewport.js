@@ -1,28 +1,3 @@
-<<<<<<< HEAD
-Ext.define('GK.view.Viewport', {
-    extend: 'Ext.Container',
-    xtype  : 'viewport',
-    
-    config : {
-        fullscreen : true,
-        layout : 'vbox',
-        items : [ 
-       
-        {
-            xtype : 'speakerpage',
-            flex : 1,
-            
-        },
-        
-        
-        ]
-
-    }
-}
-)
-        
-
-=======
 Ext.define('GK.view.Viewport', {
     extend: 'Ext.Container',
     xtype  : 'viewport',
@@ -35,7 +10,7 @@ Ext.define('GK.view.Viewport', {
         },
         items : [ 
         {
-         xtype : 'startpage',
+         xtype : 'speakerpage',
 
         }
         
@@ -46,5 +21,3 @@ Ext.define('GK.view.Viewport', {
 }
 )
         
-
->>>>>>> origin/Algis
