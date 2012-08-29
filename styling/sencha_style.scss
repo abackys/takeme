@@ -1,6 +1,8 @@
 @import 'sencha-touch/default/all';
- $base-color: #5497D9;
- $button-gradient : 'glossy';
+ $base-color: #ed217c;
+ $list-active-color : #ed217c;
+$list-pressed-color : #ed217c;
+$toolbar-base-color : #FFFFFF;
  
 
 $include-default-icons: false;
@@ -20,6 +22,6 @@ $include-default-icons: false;
 @include sencha-carousel;
 @include sencha-form;
 @include sencha-msgbox;
-@include sencha-button-ui('light_blue', #5497D9, 'glossy');
+
 
 @include pictos-iconmask('delete');
