@@ -10,14 +10,15 @@ Ext.application({
     name: 'GK',
     viewport: {autoMaximize: true},
   //  util :[ 'Date' ],
-    models: [],
-    stores: ['NewsStore'],
-    views : ['Viewport' , 'StartPageView', 'SpeakerView', 'HeaderView', 'startpage.HeaderStartPageView', 'news.NewsListItem', 'startpage.ContentListView', 'FooterView' , 'news.NewsList', 'NewsView' ,],
+    models: ['SpeakerModel'],
+    stores: ['NewsStore', 'SpeakerStore'],
+    views : ['Viewport' , 'StartPageView', 'SpeakerPageView', 'HeaderView', 'startpage.HeaderStartPageView', 'news.NewsListItem', 'startpage.ContentListView',  'speakerpage.SpeakerDetails',  'speakerpage.SpeakerHeaderView', 'FooterView' , 'news.NewsList', 'NewsView' ,],
     controllers : ['HeaderController', 'NewsController'],
   
   launch: function() {
       
   GK.Viewport = Ext.create('GK.view.Viewport')
+ 
   
   
     }

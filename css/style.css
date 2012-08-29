@@ -5,6 +5,29 @@
     Description:
         Purpose of the stylesheet follows.
 */
+/* Speakers info page*/
+h1 {
+ font-size:1.5em; 
+}
+
+h2 {
+ font-size:1.2em; 
+}
+
+p{
+ font-size:0.9em; 
+}
+.speaker-details-title{
+        padding-left:1em;
+        padding-right:1em;
+}
+
+.speaker-details-main{
+        padding:1em;
+}
+
+        
+
 /* News View Styling LOGO Styling  */
 
 .footer-text {
