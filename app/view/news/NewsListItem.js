@@ -9,9 +9,10 @@ Ext.define('GK.view.news.NewsListItem', {
         /**
          * A custom cls for each item
          */
-        cls: [Ext.baseCSSPrefix + 'list-item', 'news-list-item'],
+    
+        cls: [Ext.baseCSSPrefix + 'list-item', 'my-list-item'],
       //  cls : ,
-        height : 99,
+        height : 81,
         /**
          * setup the dataMap. each property is a method in 'this' class, and then
          * inside that config, it will call the method you pass with the value you
@@ -26,8 +27,8 @@ Ext.define('GK.view.news.NewsListItem', {
                 
             },
 
-            getName: {
-                setHtml: 'name'
+            getNewstext: {
+                setHtml: 'newstext'
             }
 
          
@@ -40,30 +41,28 @@ Ext.define('GK.view.news.NewsListItem', {
          * a new Ext.Img.
          */
         image: {
-            height : 99,
-            width :99,
-            cls : 'image-max-height'
+            height : 80,
+            width :80,
+            cls : 'image-max-height',
         },
         
        
 
         /**
-         * @cfg {Boolean/Object/Ext.Component} name
+         * @cfg {Boolean/Object/Ext.Component} newstext
          * The component used to show an image. It is an Ext.Component, so we
          * just want to add a cls so we can style it, and add some flex so it
          * looks good.
          */
-        name: {
-            cls: 'news-title',
-            flex: 1
+        newstext: {
+            cls: 'my-list-item-text',
+            flex: 1,
         },
         
-         disclosure : {
-           src : 'images/disclosure_ico.png' ,
-            height : 42,
-            width : 27,
-            cls : 'news-disclosure'
-    
+          disclosure : {
+            height : 50,
+            width : 50,
+            cls :[ 'disclosure-pink', 'disclosure-white', 'disclosure']
         },
 
         /**
@@ -85,7 +84,7 @@ Ext.define('GK.view.news.NewsListItem', {
      * This should *never* be called manually. It will be called when you call {@link #setImage}.
      */
     applyDisclosure: function(config) {
-        return Ext.factory(config, Ext.Img, this.getDisclosure());
+        return Ext.factory(config, Ext.Container, this.getDisclosure());
     },
 
     /**
@@ -127,32 +126,32 @@ Ext.define('GK.view.news.NewsListItem', {
     },
 
     /**
-     * Called when you set the {@link #name} configuration.
+     * Called when you set the {@link #newstext} configuration.
      *
      * Uses Ext.factory to return a proper instance using the configuration passed, the
      * default component, and the existing instance (if it exists).
      *
-     * This should *never* be called manually. It will be called when you call {@link #setName}.
+     * This should *never* be called manually. It will be called when you call {@link #setnewstext}.
      * @private
-     */
-    applyName: function(config) {
-        return Ext.factory(config, Ext.Component, this.getName());
+     */ 
+    applyNewstext: function(config) {
+        return Ext.factory(config, Ext.Component, this.getNewstext());
     },
 
     /**
-     * Called when you set the {@link #name} configuration, and is passed both the new value
-     * (from applyName) and the old value.
+     * Called when you set the {@link #newstext} configuration, and is passed both the new value
+     * (from applynewstext) and the old value.
      *
-     * This should *never* be called manually. It will be called when you call {@link #setName}.
+     * This should *never* be called manually. It will be called when you call {@link #setnewstext}.
      * @private
      */
-    updateName: function(newName, oldName) {
-        if (newName) {
-            this.add(newName);
+    updateNewstext: function(newnewstext, oldnewstext) {
+        if (newnewstext) {
+            this.add(newnewstext);
         }
 
-        if (oldName) {
-            this.remove(oldName);
+        if (oldnewstext) {
+            this.remove(oldnewstext);
         }
     }
 

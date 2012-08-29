@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Ext.define('GK.view.Viewport', {
     extend: 'Ext.Container',
     xtype  : 'viewport',
@@ -21,3 +22,29 @@ Ext.define('GK.view.Viewport', {
 )
         
 
+=======
+Ext.define('GK.view.Viewport', {
+    extend: 'Ext.Container',
+    xtype  : 'viewport',
+    
+    config : {
+        fullscreen : true,
+        layout : {
+          type : 'card'  ,
+          animation : { type : 'slide'}
+        },
+        items : [ 
+        {
+         xtype : 'startpage',
+
+        }
+        
+        
+        ]
+
+    }
+}
+)
+        
+
+>>>>>>> origin/Algis
