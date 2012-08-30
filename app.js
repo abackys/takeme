@@ -11,13 +11,14 @@ Ext.application({
     viewport: {autoMaximize: true},
   //  util :[ 'Date' ],
     models: [],
- //   stores: ['NewsStore'],
-    views : ['Viewport' ,  'SpeakersView', 'StartPageView', 'HeaderView',  'FooterView' , 'NewsView' , 'SponsorsView'],
+    stores: ['Speakers', 'News'],
+    views : ['Viewport' ,  'StartPageView', 'HeaderView',  'FooterView' , 'NewsView' , 'SponsorsView', 'SpeakersView'],
     controllers : ['StartPageController', 'RoutingController', 'HeaderController', 'NewsController'],
   
   launch: function() {
       
   GK.Viewport = Ext.create('GK.view.Viewport')
+  console.log(Ext.getStore('News'))
   
     }
 });

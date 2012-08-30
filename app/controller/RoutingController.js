@@ -8,7 +8,9 @@ Ext.define('GK.controller.RoutingController', {
         routes : {     
             
             '' : 'showStartPage',
-            'sponsors' : 'showSponsors'
+            'sponsors' : 'showSponsors',
+            'speakers' : 'showSpeakers',
+            'news' : 'showNews'
         }, 
         control : {
          
@@ -28,6 +30,12 @@ Ext.define('GK.controller.RoutingController', {
     },
     showSponsors : function(){
         GK.Viewport.setActiveItem({xtype : 'sponsors'})
+    },
+     showSpeakers : function(){
+        GK.Viewport.setActiveItem({xtype : 'speakers'})
+    },
+      showNews : function(){
+        GK.Viewport.setActiveItem({xtype : 'news'})
     },
     init : function(){
    // this.id = null;

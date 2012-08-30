@@ -1,0 +1,11 @@
+
+// Max 50 Simboliu -> Name
+{"speakers" : [ { "name": "Speaker Myker", "subject": "Some text", "speaker_img" : "images/news_thumb.jpg" },
+        { "name": "Speaker Myker", "subject": "Some text", "speaker_img"  : "images/news_thumb.jpg" },
+        { "name": "Speaker Myker", "subject": "Menu Item aa1", "speaker_img"  : "images/news_thumb.jpg" },
+        { "name": "Speaker Spea ker Spea ker Myk er", "subject": "Menu Item aa1", "speaker_img"  : "images/news_thumb.jpg" },
+        { "name": "Speaker Myker", "subject": "Menu Item aa1", "speaker_img" : "images/news_thumb.jpg" },
+        { "name": "Speaker Myker", "subject": "Menu Item aa1", "speaker_img"  : "images/news_thumb.jpg" },
+        { "name": "Speaker Myker", "subject": "Menu Item aa1", "speaker_img"  : "images/news_thumb.jpg" },
+        { "name": "Speaker Myker", "subject": "Menu Item aa1", "speaker_img"  : "images/news_thumb.jpg" }
+    ]}

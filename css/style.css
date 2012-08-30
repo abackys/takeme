@@ -66,6 +66,8 @@
     position: absolute;
     bottom: 1.05em;
     right: 0.44em;
+    height : 50px;
+    width : 43px;
 }
 
 
@@ -76,6 +78,15 @@
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0398FF), color-stop(3%, #007AD0), color-stop(100%, #005C9D));
     background-image: -webkit-linear-gradient(top, #0398FF,#007AD0 3%,#005C9D);
     background-image: linear-gradient(top, #0398FF,#007AD0 3%,#005C9D);
+}
+
+.my-list-item .disclosure-green {
+
+    background-color: #8dc63f;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a3d165), color-stop(3%, #8dc63f), color-stop(100%, #709e32));
+    background-image: -webkit-linear-gradient(top, #a3d165,#8dc63f 3%,#709e32);
+    background-image: linear-gradient(top, #a3d165,#8dc63f 3%,#709e32);
+
 }
 
 .my-list-item .disclosure-pink {
@@ -108,12 +119,19 @@
 .my-list-item-text {
 
     padding-left: 0.5em;
+    padding-right : 45px;
 }
 
-.sponsors-image {
-    
-    
-}
+.nowrapText .x-innerhtml {
+        
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+
+        
+    }
+
+
 
 /*  Overriding Sencha Touch */
 
@@ -130,7 +148,7 @@
 .x-list .x-list-item:nth-child(3n+2) .x-list-disclosure{
 
     -webkit-mask: 0 0 url('./css_images/disclosure_ico.png') no-repeat;
-    background-color: #e2126f;
+    background-color: #8dc63f;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a3d165), color-stop(3%, #8dc63f), color-stop(100%, #709e32));
     background-image: -webkit-linear-gradient(top, #a3d165,#8dc63f 3%,#709e32);
     background-image: linear-gradient(top, #a3d165,#8dc63f 3%,#709e32);

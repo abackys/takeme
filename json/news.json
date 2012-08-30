@@ -1,0 +1,11 @@
+// Max 50 simboliu -. newsItem
+
+{"news" : [ { "newsItem": "Kažkokia naujienos title", "newsShortText": "Some text", "thumb_url" : "images/news_thumb.jpg" },
+        { "newsItem": "Kažkokia naujienos title", "newsShortText": "Some text", "thumb_url"  : "images/news_thumb.jpg" },
+        { "newsItem": "asdvjdmvjt jdkvmsjfnv jdntufjnds kfmtujnfgd krndhthfnd", "newsShortText": "Menu Item aa1", "thumb_url"  : "images/news_thumb.jpg" },
+        { "newsItem": "Kažkokia nau  ažkokia naujienos titlejienos title", "newsShortText": "Menu Item aa1", "thumb_url"  : "images/news_thumb.jpg" },
+        { "newsItem": "Kažkokia nau  ažkokia naujienos titlejienos title", "newsShortText": "Menu Item aa1", "thumb_url" : "images/news_thumb.jpg" },
+        { "newsItem": "Kažkokia naažkokia naujienos titleažko", "newsShortText": "Menu Item aa1", "thumb_url"  : "images/news_thumb.jpg" },
+        { "newsItem": "Kažkokia naujienos title", "newsShortText": "Menu Item aa1", "thumb_url"  : "images/news_thumb.jpg" },
+        { "newsItem": "Kažkokia naujienos title", "newsShortText": "Menu Item aa1", "thumb_url"  : "images/news_thumb.jpg" }
+    ]}

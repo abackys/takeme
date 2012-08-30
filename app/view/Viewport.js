@@ -7,15 +7,7 @@ Ext.define('GK.view.Viewport', {
         layout : {
           type : 'card'  ,
           animation : { type : 'slide'}
-        },
-        items : [ 
-        {
-         xtype : 'startpage',
-
         }
-        
-        
-        ]
 
     }
 }
