@@ -5,9 +5,28 @@ Ext.define('GK.view.Viewport', {
     config : {
         fullscreen : true,
         layout : {
-          type : 'card'  ,
-          animation : { type : 'slide'}
+            type : 'card'  ,
+            animation : {
+                type : 'slide'
+            }
+        },
+        items : [
+        {
+            xtype : 'startpage'
+        },
+        {
+            xtype : 'sponsors'
+        },
+        {
+            xtype : 'news'
+        },
+        {
+            xtype : 'speakers'
+        },
+        {
+            xtype : 'speakerpage'
         }
+        ]
 
     }
 }

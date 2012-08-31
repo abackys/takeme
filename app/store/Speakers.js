@@ -1,7 +1,7 @@
 Ext.define('GK.store.Speakers', {
           extend : 'Ext.data.Store',
           config : {
-          fields : ['name', 'newstexta', 'speaker_img' ],
+          fields : ['name', 'about_speaker',  'conference_name', 'speaker_img', 'speaker_foto' ],
           autoLoad : true,
           proxy : {
             type: 'ajax',

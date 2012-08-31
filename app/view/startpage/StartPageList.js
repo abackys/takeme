@@ -16,7 +16,7 @@ Ext.define('GK.view.startpage.StartPageList', {
         { menuItemText: 'REMĖJAI', menuItem : 'sponsors' }
      
     ], 
-  
+    scrollable : false,
     style : 'margin-top: -5px;',
       disclosure: true,
 

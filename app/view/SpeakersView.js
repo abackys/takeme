@@ -3,6 +3,7 @@ Ext.define('GK.view.SpeakersView', {
     xtype  : 'speakers',
     requires: [
     'GK.view.speakers.SpeakersList',
+    'GK.view.speakerpage.SpeakerDetails'
     ],
     config : {
         scrollable : false,

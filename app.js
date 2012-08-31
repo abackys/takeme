@@ -12,13 +12,14 @@ Ext.application({
   //  util :[ 'Date' ],
     models: [],
     stores: ['Speakers', 'News'],
+    controllers : ['StartPageController', 'SpeakersController', 'RoutingController', 'NewsController'],
     views : ['Viewport' ,  'StartPageView', 'HeaderView',  'FooterView' , 'NewsView' , 'SponsorsView', 'SpeakersView'],
-    controllers : ['StartPageController', 'RoutingController', 'HeaderController', 'NewsController'],
   
   launch: function() {
       
   GK.Viewport = Ext.create('GK.view.Viewport')
-  console.log(Ext.getStore('News'))
+ // console.log(Ext.getStore('News'))
+ 
   
     }
 });

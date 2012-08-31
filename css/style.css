@@ -136,6 +136,10 @@ white-space: nowrap;
 /*  Overriding Sencha Touch */
 
 /* disclosure Ico  */
+
+
+
+
 .x-list .x-list-item:nth-child(3n+1) .x-list-disclosure{
 
     -webkit-mask: 0 0 url('./css_images/disclosure_ico.png') no-repeat;
@@ -162,6 +166,15 @@ white-space: nowrap;
     background-image: -webkit-linear-gradient(top, #f15098,#ed217c 3%,#e2126f);
     background-image: linear-gradient(top, #f15098,#ed217c 3%,#e2126f);
 }
+
+.x-list .x-list-item.x-item-selected .x-list-disclosure {
+    background-color: #FFFFFF !important;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #FFFFFF), color-stop(3%, #FFFFFF), color-stop(100%, #FFFFFF));
+    background-image: -webkit-linear-gradient(top, #FFFFFF,#FFFFFF 3%,#FFFFFF);
+    background-image: linear-gradient(top, #FFFFFF,#FFFFFF 3%,#FFFFFF);
+}
+
+
 
 /*  White text in List element  */
 

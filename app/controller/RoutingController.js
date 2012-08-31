@@ -8,37 +8,39 @@ Ext.define('GK.controller.RoutingController', {
         routes : {     
             
             '' : 'showStartPage',
-            'sponsors' : 'showSponsors',
-            'speakers' : 'showSpeakers',
-            'news' : 'showNews'
+            'sponsors/' : 'showSponsors',
+            'speakers/' : 'showSpeakers',
+            'news/' : 'showNews'
         }, 
         control : {
          
             '[action=back]' : {
                 tap : function(){
-                    window.scrollTo(0, 1);
-                    window.scrollTo(0, 1);
                     history.back()
+                    window.scrollTo(0, 1);
                 }
             }
        
         }
     
     },
-     showStartPage : function(){
-        GK.Viewport.setActiveItem({xtype : 'startpage'})
+    showStartPage : function(){
+        GK.Viewport.setActiveItem(0)
     },
     showSponsors : function(){
-        GK.Viewport.setActiveItem({xtype : 'sponsors'})
+        GK.Viewport.setActiveItem(1)
+        window.scrollTo(0, 1);
     },
-     showSpeakers : function(){
-        GK.Viewport.setActiveItem({xtype : 'speakers'})
+    showNews : function(){
+        window.scrollTo(0, 1);
+        GK.Viewport.setActiveItem(2)
+    },    
+    showSpeakers : function(){
+        GK.Viewport.setActiveItem(3)
     },
-      showNews : function(){
-        GK.Viewport.setActiveItem({xtype : 'news'})
-    },
+    
     init : function(){
-   // this.id = null;
+    // this.id = null;
         
     }
    
