@@ -4,10 +4,28 @@ Ext.define('GK.view.speakerpage.SpeakerDetails', {
     
     config : {    
         layout : 'vbox',
+        pack : 'center',
+        align : 'middle',
         items : [
-        {
-            tpl: '<img src="{img}">',
-            cls : 'image-max-width',
+        {  
+            xtype : 'panel',
+            layout : 'hbox',
+            items : [
+            {
+                flex : 1
+            } ,
+{
+                tpl: '<img src="{img}">',
+                cls : 'image-max-width',
+                data : {
+                    img : 'images/speaker.jpg'
+                },
+            } ,
+{
+                flex : 1
+            }  
+            ]
+           
         },
         {
             xtype: 'container',
@@ -15,23 +33,25 @@ Ext.define('GK.view.speakerpage.SpeakerDetails', {
      
         },
         {
-            cls : 'speaker-details-title',
+            cls : 'details-title',
             xtype: 'container',              
             tpl: '<h1>{name}</h1>',
+             data : {name : 'asdasdas dasda sdasd'}
                        
         },
         {   
-            cls : 'speaker-details-title',
+            cls : 'details-subtitle',
             xtype: 'container',
             tpl: '<h2>{conference_name}</h2>',
+             data : {conference_name : 'asdasdasdasdasdasd'}
                 
         },
         {
-            cls : 'speaker-details-main',
+            cls :[ 'speaker-details-main', 'details-text'],
             xtype: 'container',
-         //   style: "  margin-top:1em;",
+            
             tpl: '<p>{about_speaker}</p>',
-          
+            data : {about_speaker : 'asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd '},
            
 
         }

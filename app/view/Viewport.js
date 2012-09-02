@@ -1,7 +1,9 @@
 Ext.define('GK.view.Viewport', {
     extend: 'Ext.Container',
     xtype  : 'viewport',
-    
+     requires: [
+    'GK.view.details.Details'
+    ],
     config : {
         fullscreen : true,
         layout : {
@@ -25,6 +27,15 @@ Ext.define('GK.view.Viewport', {
         },
         {
             xtype : 'speakerpage'
+        },
+        {
+            xtype : 'detailspage'
+        },
+        {
+            xtype : 'partypage'
+        },
+        {
+            xtype : 'aboutpage'
         }
         ]
 

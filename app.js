@@ -13,7 +13,7 @@ Ext.application({
     models: [],
     stores: ['Speakers', 'News'],
     controllers : ['StartPageController', 'SpeakersController', 'RoutingController', 'NewsController'],
-    views : ['Viewport' ,  'StartPageView', 'HeaderView',  'FooterView' , 'NewsView' , 'SponsorsView', 'SpeakersView'],
+    views : ['Viewport' ,  'StartPageView', 'HeaderView',  'FooterView' , 'NewsView' , 'SponsorsView', 'SpeakersView', 'DetailsView', 'PartyView', 'AboutView'],
   
   launch: function() {
       

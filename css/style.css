@@ -7,6 +7,28 @@
 */
 /* News View Styling LOGO Styling  */
 
+.details-about-button {
+   margin: 0.5em ; 
+   
+}
+
+.details-text {
+    text-align: justify;
+    margin-top:1em;
+    padding-right: 1em;
+    padding-left: 0.5em;
+}
+
+.details-title {
+    padding-right: 1em;
+    padding-left: 0.5em;
+}
+
+.details-subtitle {
+    padding-right: 1em;
+    padding-left: 0.5em;
+}
+
 .footer-text {
     text-align: center;
     font-size: 0.7em;
@@ -16,6 +38,8 @@
 
 .header-back-img {
     border-right: 1px solid #CCC;
+    height: 2.6em;
+    background-size: 2.6em;
 }
 
 .header-title {

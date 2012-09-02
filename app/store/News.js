@@ -1,7 +1,7 @@
 Ext.define('GK.store.News', {
     extend : 'Ext.data.Store',
     config : {
-        fields : ['newsItem', 'thumb_url', 'newsShortText' ],
+        fields : ['newsTitle', 'newsText', 'promo_thumb', 'promo_img' ],
         autoLoad : true,
         proxy : {
             type: 'ajax',

@@ -23,12 +23,12 @@ Ext.define('GK.view.news.NewsListItem', {
             getImage: {
                 //and then this will call: this.getImage().setSrc() with the
                 //'image' field value form the record
-                setSrc: 'thumb_url'
+                setSrc: 'promo_thumb'
                 
             },
 
             getNewstext: {
-                setHtml: 'newsItem'
+                setHtml: 'newsTitle'
             }
 
          

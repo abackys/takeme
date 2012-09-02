@@ -8,11 +8,11 @@ Ext.define('GK.controller.StartPageController', {
          
             
             'startpagelist' : {
-                select : 'menuTap'
+                itemtap : 'menuTap'
             }
         }
     },
-    menuTap : function(comp, record){
+    menuTap : function(comp, index, target, record){
           this.redirectTo(record.data.menuItem + '/')
     }
      
