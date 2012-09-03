@@ -10,7 +10,6 @@ Ext.define('GK.view.DetailsView', {
         items : [ 
         {
             xtype : 'header',
-            title : 'Naujiena',
         },
        
         {

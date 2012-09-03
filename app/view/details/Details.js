@@ -16,9 +16,8 @@ Ext.define('GK.view.details.Details', {
                 flex : 1
             } ,
 {
-                tpl: '<img src="{promo_img}">',
                 cls : 'image-max-width',
-                data : {    promo_img : 'images/speaker.jpg'   },
+                itemId : 'promo_img'
             } ,
 {
                 flex : 1
@@ -35,7 +34,8 @@ Ext.define('GK.view.details.Details', {
             cls : 'details-title',
             xtype: 'container',              
             tpl: '{title}',
-            data : {title : 'asdasdas dasda sdasd'}
+            itemId : 'details_title'
+       //     data : {title : 'asdasdas dasda sdasd'}
                        
         },
         {
@@ -43,7 +43,8 @@ Ext.define('GK.view.details.Details', {
             xtype: 'container',
             
             tpl: '{main_text}',
-            data : {main_text : 'asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd '},
+            itemId : 'details_text'
+        //    data : {main_text : 'asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd '},
            
 
         }

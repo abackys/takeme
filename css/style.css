@@ -22,6 +22,7 @@
 .details-title {
     padding-right: 1em;
     padding-left: 0.5em;
+    font-weight: bold;
 }
 
 .details-subtitle {
@@ -144,6 +145,10 @@
 
     padding-left: 0.5em;
     padding-right : 45px;
+}
+
+.speakers-conference-title {
+    font-style: italic;
 }
 
 .nowrapText .x-innerhtml {

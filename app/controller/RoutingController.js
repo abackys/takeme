@@ -13,7 +13,8 @@ Ext.define('GK.controller.RoutingController', {
             'news/' : 'showNews',
             'tickets/' : 'redirectToTickets',
             'party/' : 'showParty',
-            'about/': 'showAbout'
+            'about/': 'showAbout',
+            'workshops/': 'showWorkshops'
         }, 
         control : {
          
@@ -50,7 +51,10 @@ Ext.define('GK.controller.RoutingController', {
         
         GK.Viewport.setActiveItem(7)
     },
-    
+     showWorkshops : function(){
+        
+        GK.Viewport.setActiveItem(8)
+    },
     
     
     init : function(){

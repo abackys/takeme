@@ -12,11 +12,11 @@ Ext.define('GK.view.speakers.SpeakersListItem', {
         height : 81,
         dataMap: {
             getAvatar: {
-                setSrc: 'speaker_img'
+                setSrc: 'promo_thumb'
                 
             },
             getName: {
-                setHtml: 'name'
+                setData: 'xindex'
             }
         },
         avatar: {
@@ -30,6 +30,7 @@ Ext.define('GK.view.speakers.SpeakersListItem', {
         name: {
             cls: ['my-list-item-text'],
             flex: 1
+          
         },
         
          disclosure : {
@@ -74,7 +75,7 @@ Ext.define('GK.view.speakers.SpeakersListItem', {
 
   
     applyName: function(config) {
-        return Ext.factory(config, Ext.Component, this.getName());
+        return Ext.factory(config, 'GK.view.speakers.Speaker', this.getName());
     },
 
     updateName: function(newName, oldName) {

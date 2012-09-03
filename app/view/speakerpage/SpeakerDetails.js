@@ -15,11 +15,8 @@ Ext.define('GK.view.speakerpage.SpeakerDetails', {
                 flex : 1
             } ,
 {
-                tpl: '<img src="{img}">',
                 cls : 'image-max-width',
-                data : {
-                    img : 'images/speaker.jpg'
-                },
+                itemId : 'promo_img'
             } ,
 {
                 flex : 1
@@ -34,16 +31,18 @@ Ext.define('GK.view.speakerpage.SpeakerDetails', {
         },
         {
             cls : 'details-title',
-            xtype: 'container',              
-            tpl: '<h1>{name}</h1>',
-             data : {name : 'asdasdas dasda sdasd'}
+            xtype: 'container',  
+            itemId : 'details_title',            
+            tpl: '{name}',
+         //    data : {name : 'asdasdas dasda sdasd'}
                        
         },
         {   
             cls : 'details-subtitle',
             xtype: 'container',
-            tpl: '<h2>{conference_name}</h2>',
-             data : {conference_name : 'asdasdasdasdasdasd'}
+            tpl: '{conference_name}',
+            itemId : 'details_subtitle', 
+        //     data : {conference_name : 'asdasdasdasdasdasd'}
                 
         },
         {
@@ -52,7 +51,7 @@ Ext.define('GK.view.speakerpage.SpeakerDetails', {
             
             tpl: '<p>{about_speaker}</p>',
             data : {about_speaker : 'asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd '},
-           
+            itemId : 'details_text', 
 
         }
        
