@@ -7,18 +7,17 @@
 
 
         <title>Take Me</title>
-
-
         <link rel="stylesheet" href="./css/sencha_style.css" type="text/css">
-
 
         <link rel="stylesheet" href="./css/style.css" type="text/css">
         <script type="text/javascript" src="lib/ST2/sencha-touch-all-debug.js"></script>
          <script type="text/javascript" src="app.js"></script>
-           <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-503de1d1163388f3"></script>
-
-
+         <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-503de1d1163388f3"></script>
+    
+         <script> 
+</script>
     </head>
     <body>
-    </body>
+        
+   </body>
 </html> 
