@@ -3,7 +3,7 @@ Ext.define('GK.controller.NewsController', {
     config : {
         refs : {
             details : 'details',
-            header : 'header'
+            detailspage : 'detailspage'
         },
       
         control : {
@@ -68,8 +68,8 @@ Ext.define('GK.controller.NewsController', {
     updateNewsData : function(record){
         var comp = this.getDetails();
         // NEeed to see how to change the title
-             Ext.ComponentQuery.query('header')[0].setTitle('asdasdasdsa');
-        console.log(comp.down('header'))
+        
+        this.getDetailspage().down('header').setTitle(record.newsTitle)
         var img = comp.down('#promo_img')
         var title = comp.down('#details_title')
         var text = comp.down('#details_text') 

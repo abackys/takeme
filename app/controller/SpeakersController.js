@@ -3,7 +3,8 @@ Ext.define('GK.controller.SpeakersController', {
     requires : ['GK.view.speakerpage.SpeakerDetails' , 'GK.view.SpeakerPageView'],
     config : {
         refs : {
-            speakerdetails: 'speakerdetails'
+            speakerdetails: 'speakerdetails',
+            speakerpage  : 'speakerpage'
         },   
         control : {
          
@@ -50,6 +51,7 @@ Ext.define('GK.controller.SpeakersController', {
     
      updateSpeakerData : function(record){
          var comp = this.getSpeakerdetails();
+         this.getSpeakerpage().down('header').setTitle(record.name)
         var img = comp.down('#promo_img')
         var title = comp.down('#details_title')
         var subtitle = comp.down('#details_subtitle') 

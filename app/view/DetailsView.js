@@ -13,7 +13,7 @@ Ext.define('GK.view.DetailsView', {
         },
        
         {
-            xtype : 'details',
+              xtype : 'details',
               scrollable : true,
               flex : 1
         },
