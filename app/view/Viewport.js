@@ -2,7 +2,8 @@ Ext.define('GK.view.Viewport', {
     extend: 'Ext.Container',
     xtype  : 'viewport',
      requires: [
-    'GK.view.details.Details'
+    'GK.view.details.Details',
+    'GK.view.Share'
     ],
     config : {
         fullscreen : true,
