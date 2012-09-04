@@ -1,4 +1,4 @@
-Ext.define('GK.view.speakerpage.SpeakerDetails', {
+Ext.define('GK.view.details.SpeakerDetails', {
     extend: 'Ext.Container',
     xtype  : 'speakerdetails',
     
@@ -6,6 +6,7 @@ Ext.define('GK.view.speakerpage.SpeakerDetails', {
         layout : 'vbox',
         pack : 'center',
         align : 'middle',
+     
         items : [
         {  
             xtype : 'panel',
@@ -25,9 +26,7 @@ Ext.define('GK.view.speakerpage.SpeakerDetails', {
            
         },
         {
-            xtype: 'container',
-            html: '<div class="addthis_toolbox addthis_default_style "></a> <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a> <a class="addthis_button_tweet"></a> <a class="addthis_button_pinterest_pinit"></a><a class="addthis_counter addthis_pill_style"></a></div>',
-     
+            xtype: 'sharebutton',
         },
         {
             cls : 'details-title',
@@ -50,7 +49,8 @@ Ext.define('GK.view.speakerpage.SpeakerDetails', {
             xtype: 'container',
             
             tpl: '<p>{about_speaker}</p>',
-            data : {about_speaker : 'asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd '},
+            styleHtmlContent : true,
+        //    data : {about_speaker : 'asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd '},
             itemId : 'details_text', 
 
         }

@@ -25,22 +25,21 @@ Ext.define('GK.view.details.Details', {
             ]
            
         },
-        {
-            xtype: 'container',
-            html: '<div class="addthis_toolbox addthis_default_style "></a> <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a> <a class="addthis_button_tweet"></a> <a class="addthis_button_pinterest_pinit"></a><a class="addthis_counter addthis_pill_style"></a></div>',
-     
+ {
+            xtype: 'sharebutton'
         },
         {
             cls : 'details-title',
             xtype: 'container',              
             tpl: '{title}',
-            itemId : 'details_title'
+            itemId : 'details_title',
        //     data : {title : 'asdasdas dasda sdasd'}
                        
         },
         {
             cls :['details-text'],
             xtype: 'container',
+            styleHtmlContent : true,
             
             tpl: '{main_text}',
             itemId : 'details_text'

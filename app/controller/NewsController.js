@@ -9,7 +9,12 @@ Ext.define('GK.controller.NewsController', {
         control : {
             'newslist' : {
                 itemtap : 'newsItemTap'
+            },
+             'scheduleworkshopslist' : {
+                itemtap : 'newsItemTap'
             }
+            
+            
 
 
         },
@@ -26,7 +31,7 @@ Ext.define('GK.controller.NewsController', {
     },
     newsItemTap : function(list, index, comp, record){
         
-       
+       console.log(list._itemId)
         this.ItemTapCSS(comp, this.oldSelectedItem )
         this.oldSelectedItem = comp; 
         this.redirectTo(list._itemId +'/'+ record.data.xindex)

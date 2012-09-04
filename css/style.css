@@ -14,20 +14,18 @@
 
 .details-text {
     text-align: justify;
-    margin-top:1em;
-    padding-right: 1em;
-    padding-left: 0.5em;
 }
 
 .details-title {
     padding-right: 1em;
     padding-left: 0.5em;
-    font-weight: bold;
+    
 }
 
 .details-subtitle {
     padding-right: 1em;
     padding-left: 0.5em;
+    font-weight: bold;
 }
 
 .footer-text {
@@ -39,7 +37,7 @@
 
 .header-back-img {
     border-right: 1px solid #CCC;
-    height: 2.6em;
+    height: 2.6em; 
     background-size: 2.6em;
 }
 
@@ -105,7 +103,7 @@
     background-image: linear-gradient(top, #0398FF,#007AD0 3%,#005C9D);
 }
 
-.my-list-item .disclosure-green {
+.my-list-item .disclosure-green, .schedule-image-green {
 
     background-color: #8dc63f;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a3d165), color-stop(3%, #8dc63f), color-stop(100%, #709e32));
@@ -114,7 +112,7 @@
 
 }
 
-.my-list-item .disclosure-pink {
+.my-list-item .disclosure-pink, .schedule-image-pink  {
 
     background-color: #e2126f;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f15098), color-stop(3%, #ed217c), color-stop(100%, #e2126f));
@@ -147,8 +145,13 @@
     padding-right : 45px;
 }
 
+.speakers-conference-name {
+
+}
+
 .speakers-conference-title {
     font-style: italic;
+    font-weight: bold;
 }
 
 .nowrapText .x-innerhtml {

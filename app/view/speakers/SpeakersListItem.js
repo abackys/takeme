@@ -11,7 +11,7 @@ Ext.define('GK.view.speakers.SpeakersListItem', {
       //  cls : ,
         height : 81,
         dataMap: {
-            getAvatar: {
+            getImage: {
                 setSrc: 'promo_thumb'
                 
             },
@@ -19,7 +19,7 @@ Ext.define('GK.view.speakers.SpeakersListItem', {
                 setData: 'xindex'
             }
         },
-        avatar: {
+        image: {
             height : 80,
             width :80,
             docked : 'left',
@@ -59,17 +59,17 @@ Ext.define('GK.view.speakers.SpeakersListItem', {
         }
     },
     
-     applyAvatar: function(config) {
-        return Ext.factory(config, Ext.Img, this.getAvatar());
+     applyImage: function(config) {
+        return Ext.factory(config, Ext.Img, this.getImage());
     },
 
-    updateAvatar: function(newAvatar, oldAvatar) {
-        if (newAvatar) {
-            this.add(newAvatar);
+    updateImage: function(newImage, oldImage) {
+        if (newImage) {
+            this.add(newImage);
         }
 
-        if (oldAvatar) {
-            this.remove(oldAvatar);
+        if (oldImage) {
+            this.remove(oldImage);
         }
     },
 

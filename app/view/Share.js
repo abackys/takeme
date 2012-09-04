@@ -1,6 +1,6 @@
  Ext.define('GK.view.Share', {
     extend: 'Ext.Container',
-    xtype: 'share', 
+    xtype: 'sharebutton', 
     config: {
         layout: 'hbox',
         items: [     

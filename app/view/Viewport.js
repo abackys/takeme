@@ -41,6 +41,9 @@ Ext.define('GK.view.Viewport', {
         { 
             xtype : 'workshops'
         },
+        { 
+            xtype : 'schedule'
+        },
         ]
 
     }

@@ -1,6 +1,6 @@
 Ext.define('GK.controller.SpeakersController', {
     extend : 'Ext.app.Controller',
-    requires : ['GK.view.speakerpage.SpeakerDetails' , 'GK.view.SpeakerPageView'],
+    requires : ['GK.view.details.SpeakerDetails' , 'GK.view.SpeakerPageView'],
     config : {
         refs : {
             speakerdetails: 'speakerdetails',
@@ -9,6 +9,9 @@ Ext.define('GK.controller.SpeakersController', {
         control : {
          
             'speakerslist' : {
+                itemtap : 'speakerTapped'
+            },
+            'schedulelist' : {
                 itemtap : 'speakerTapped'
             }
        
