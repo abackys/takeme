@@ -8,7 +8,7 @@ Ext.define('GK.view.FooterView', {
         items : [ 
         {
             xtype : 'container',
-            html : 'Mobile Web Solution - CrazyImp Studio',
+            html : 'Mobile Web Solution made by <a href="http://www.crazyimp.com"><b>Crazyimp.com</b></a>',
             cls : 'footer-text'
         },
        

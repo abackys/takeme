@@ -25,9 +25,6 @@ Ext.define('GK.view.details.Details', {
             ]
            
         },
- {
-            xtype: 'sharebutton'
-        },
         {
             cls : 'details-title',
             xtype: 'container',              

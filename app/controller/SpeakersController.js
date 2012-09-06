@@ -37,8 +37,6 @@ Ext.define('GK.controller.SpeakersController', {
         else   {
             Ext.getStore('Speakers').load({
                 callback: function(records, operation, success) {
-                   
-                    console.log(records[id-1]);
                     this.updateSpeakerData(records[id-1].data)
                 },
                 scope: this

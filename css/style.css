@@ -6,6 +6,11 @@
         Purpose of the stylesheet follows.
 */
 /* News View Styling LOGO Styling  */
+html, body {
+font-family: "Century Gothic", sans-serif;
+
+}
+
 
 .details-about-button {
    margin: 0.5em ; 
@@ -163,6 +168,17 @@ white-space: nowrap;
         
     }
 
+    .startpage-list .x-list-item:nth-child(9)  {
+        border-top-color: #3B5998;
+        border-bottom-color: #3B5998;
+        background-image: none;
+        background-color: #3B5998;
+        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3B5998), color-stop(3%, #3B5998), color-stop(100%, #3B5998));
+        background-image: -webkit-linear-gradient(top, #3B5998,#3B5998 3%,#3B5998);
+        background-image: linear-gradient(top, #3B5998,#3B5998 3%,#3B5998);
+        color: white;
+        text-shadow: rgba(255, 255, 255, 0.25) 0 0.08em 0;
+    }
 
 
 /*  Overriding Sencha Touch */

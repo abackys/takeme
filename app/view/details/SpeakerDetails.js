@@ -26,9 +26,6 @@ Ext.define('GK.view.details.SpeakerDetails', {
            
         },
         {
-            xtype: 'sharebutton',
-        },
-        {
             cls : 'details-title',
             xtype: 'container',  
             itemId : 'details_title',            

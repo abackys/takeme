@@ -13,8 +13,20 @@ Ext.define('GK.controller.StartPageController', {
         }
     },
     menuTap : function(comp, index, target, record){
-          this.redirectTo(record.data.menuItem + '/')
+     window.scrollTo(0, 1);
+        if(record.data.menuItem == 'schedule')
+            alert("Informacija ruošiama")
+        else if(record.data.menuItem == 'tickets')
+             window.location = "http://www.bilietupasaulis.lt/lit/bilietai/visi/?concert=110509";
+        else if(record.data.menuItem == 'facebook')
+             window.location = "http://www.facebook.com/takeme.lt";
+        
+        
+        else  
+            this.redirectTo(record.data.menuItem + '/')
+         
     }
+    
      
    
 

@@ -13,18 +13,14 @@ Ext.define('GK.view.details.PartyDetails', {
                 flex : 1
             } ,
 {
-                tpl: '<img src=images/promo/party.png>',
+                html: '<img src=images/promo/party.jpg>',
                 cls : 'image-max-width',
-                data : {    promo_img : 'images/speaker.jpg'   },
             } ,
 {
                 flex : 1
             }  
             ]
            
-        },
-      {
-            xtype: 'sharebutton',
         },
         {
             cls : 'details-title',

@@ -11,7 +11,7 @@ Ext.define('GK.controller.RoutingController', {
             'sponsors/' : 'showSponsors',
             'speakers/' : 'showSpeakers',
             'news/' : 'showNews',
-            'tickets/' : 'redirectToTickets',
+           // 'tickets/' : 'redirectToTickets',
             'party/' : 'showParty',
             'about/': 'showAbout',
             'workshops/': 'showWorkshops',
@@ -41,14 +41,11 @@ Ext.define('GK.controller.RoutingController', {
     showSpeakers : function(){
         GK.Viewport.setActiveItem(3)
     },
-    redirectToTickets : function(){
-        window.location.replace("http://www.bilietupasaulis.lt/lit/bilietai/visi/?concert=110509");
-    },
+   
     showParty : function(){
         GK.Viewport.setActiveItem(6)
     },
     showAbout : function(){
-        
         GK.Viewport.setActiveItem(7)
     },
      showWorkshops : function(){
@@ -56,7 +53,6 @@ Ext.define('GK.controller.RoutingController', {
         GK.Viewport.setActiveItem(8)
     },
       showSchedule : function(){
-        
         GK.Viewport.setActiveItem(9)
     },
     

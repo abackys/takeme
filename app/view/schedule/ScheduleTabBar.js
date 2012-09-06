@@ -20,12 +20,15 @@ Ext.define('GK.view.schedule.ScheduleTabBar', {
             { 
               xtype : 'schedulelist',
               title : 'Pranešėjai' ,
-              iconCls: 'user',
+              iconCls: 'user'
             },
               { 
-                  xtype : 'scheduleworkshopslist',
+                  
+              
+              xtype : 'scheduleworkshopslist',
               title : 'Dirbtuvės' ,
               iconCls: 'settings',
+              itemId : 'workshops'
             },
        
         ],

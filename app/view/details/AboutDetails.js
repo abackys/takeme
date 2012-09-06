@@ -22,10 +22,7 @@ Ext.define('GK.view.details.AboutDetails', {
             ]
            
         },
-      {
-            xtype: 'sharebutton',
-        },
-      
+          
         {
             cls :['details-text'],
             xtype: 'container',
@@ -57,7 +54,9 @@ Ext.define('GK.view.details.AboutDetails', {
             layout : 'hbox',
             items : [
                 { flex : 1},
-                { html: '<img src="images/promo/about.png">' },
+                { html: '<img src="images/promo/contacts.jpg">',
+                    cls : 'image-max-width',
+                },
                  { flex : 1}
             ]
            
