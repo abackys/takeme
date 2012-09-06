@@ -1,5 +1,5 @@
 Ext.define('GK.view.NewsView', {
-    extend: 'Ext.dataview.DataView',
+    extend: 'Ext.Container',
     xtype  : 'news',
     requires: [
     'GK.view.news.NewsList'
@@ -11,14 +11,15 @@ Ext.define('GK.view.NewsView', {
         items : [ 
         {
             xtype : 'header',
-            title : 'Naujienos',
+            title : 'Naujienos'
         },
         {
             xtype : 'newslist',
+            itemId : 'news',
             flex : 1
         },
         {
-            xtype : 'footer',
+            xtype : 'footer'
         },
            
         

@@ -1,0 +1,187 @@
+{
+    "projectName": "Project Name",
+    "licenseText": "Copyright(c) 2011 Company Name",
+    "builds": [
+        {
+            "name": "All Classes",
+            "target": "all-classes.js",
+            "options": {
+                "debug": true
+            },
+            "files": [
+                {
+                    "path": "app/view/",
+                    "name": "HeaderView.js"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "FooterView.js"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "WorkshopsView.js"
+                },
+                {
+                    "path": "app/controller/",
+                    "name": "StartPageController.js"
+                },
+                {
+                    "path": "app/controller/",
+                    "name": "RoutingController.js"
+                },
+                {
+                    "path": "app/controller/",
+                    "name": "NewsController.js"
+                },
+                {
+                    "path": "app/store/",
+                    "name": "Speakers.js"
+                },
+                {
+                    "path": "app/store/",
+                    "name": "News.js"
+                },
+                {
+                    "path": "app/store/",
+                    "name": "Workshops.js"
+                },
+                {
+                    "path": "app/view/details/",
+                    "name": "Details.js"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "Share.js"
+                },
+                {
+                    "path": "app/view/startpage/",
+                    "name": "StartPageList.js"
+                },
+                {
+                    "path": "app/view/startpage/",
+                    "name": "StartPageHeader.js"
+                },
+                {
+                    "path": "app/view/sponsors/",
+                    "name": "Sponsors.js"
+                },
+                {
+                    "path": "app/view/details/",
+                    "name": "SpeakerDetails.js"
+                },
+                {
+                    "path": "app/view/details/",
+                    "name": "PartyDetails.js"
+                },
+                {
+                    "path": "app/view/details/",
+                    "name": "AboutDetails.js"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "SpeakerPageView.js"
+                },
+                {
+                    "path": "app/view/news/",
+                    "name": "NewsListItem.js"
+                },
+                {
+                    "path": "app/view/speakers/",
+                    "name": "SpeakersListItem.js"
+                },
+                {
+                    "path": "app/view/speakers/",
+                    "name": "Speaker.js"
+                },
+                {
+                    "path": "app/view/schedule/",
+                    "name": "ScheduleListItem.js"
+                },
+                {
+                    "path": "app/view/schedule/",
+                    "name": "ScheduleWorkshopsListItem.js"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "Viewport.js"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "StartPageView.js"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "SponsorsView.js"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "DetailsView.js"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "PartyView.js"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "AboutView.js"
+                },
+                {
+                    "path": "app/controller/",
+                    "name": "SpeakersController.js"
+                },
+                {
+                    "path": "app/view/news/",
+                    "name": "NewsList.js"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "NewsView.js"
+                },
+                {
+                    "path": "app/view/speakers/",
+                    "name": "SpeakersList.js"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "SpeakersView.js"
+                },
+                {
+                    "path": "app/view/schedule/",
+                    "name": "ScheduleList.js"
+                },
+                {
+                    "path": "app/view/schedule/",
+                    "name": "ScheduleWorkshopsList.js"
+                },
+                {
+                    "path": "app/view/schedule/",
+                    "name": "ScheduleTabBar.js"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "ScheduleView.js"
+                },
+                {
+                    "path": "app/controller/",
+                    "name": "ScheduleController.js"
+                }
+            ]
+        },
+        {
+            "name": "Application - Production",
+            "target": "app-all.js",
+            "compress": true,
+            "files": [
+                {
+                    "path": "",
+                    "name": "all-classes.js"
+                },
+                {
+                    "path": "",
+                    "name": "app.js"
+                }
+            ]
+        }
+    ],
+    "resources": []
+}

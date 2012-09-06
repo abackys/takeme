@@ -3,7 +3,7 @@ Ext.define('GK.view.startpage.StartPageList', {
     xtype  : 'startpagelist',
     
     config : {
-        
+    cls : 'startpage-list',    
     itemTpl: '<span>{menuItemText}<span>',
     data: [
         { menuItemText: 'BILIETAI', menuItem : 'tickets' },
@@ -13,7 +13,8 @@ Ext.define('GK.view.startpage.StartPageList', {
         { menuItemText: 'NAUJIENOS', menuItem : 'news' },
         { menuItemText: 'DIRBTUVĖS', menuItem : 'workshops' },
         { menuItemText: 'VAKARĖLIS', menuItem : 'party' },
-        { menuItemText: 'REMĖJAI', menuItem : 'sponsors' }
+        { menuItemText: 'REMĖJAI', menuItem : 'sponsors' },
+        { menuItemText: 'FACEBOOK', menuItem : 'facebook' }
      
     ], 
     scrollable : false,
@@ -23,9 +24,7 @@ Ext.define('GK.view.startpage.StartPageList', {
 
             //set the function when a user taps on a disclsoure icon
             onItemDisclosure: function(record, item, index, e) {
-                //show a messagebox alert which shows the persons firstName
-            //    e.stopEvent();
-          //      Ext.Msg.alert('Disclose', 'Disclose more info for ' + record.get('firstName'));
+            
             }
       
 

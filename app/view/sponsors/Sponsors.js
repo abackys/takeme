@@ -11,7 +11,7 @@ Ext.define('GK.view.sponsors.Sponsors', {
 
         {
                 
-            html: '<img src="./images/sponsors/sponsors.png">',
+            html: '<img src="./images/promo/sponsors.jpg">',
             // tpl :  '<img src="./images/sponsors/{[Ext.Viewport.getOrientation() === "landscape" ? "sponsors_land.png" : "sponsors.png"]}">',
             cls : ['image-max-width', 'sponsors-image']
         },

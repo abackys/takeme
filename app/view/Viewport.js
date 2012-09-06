@@ -1,6 +1,5 @@
 Ext.define('GK.view.Viewport', {
     extend: 'Ext.Container',
-    xtype  : 'viewport',
      requires: [
     'GK.view.details.Details'
     ],
@@ -36,7 +35,13 @@ Ext.define('GK.view.Viewport', {
         },
         {
             xtype : 'aboutpage'
-        }
+        },
+        { 
+            xtype : 'workshops'
+        },
+        { 
+            xtype : 'schedule'
+        },
         ]
 
     }

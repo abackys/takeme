@@ -1,13 +1,17 @@
 Ext.define('GK.controller.SpeakersController', {
     extend : 'Ext.app.Controller',
-    requires : ['GK.view.speakerpage.SpeakerDetails' , 'GK.view.SpeakerPageView'],
+    requires : ['GK.view.details.SpeakerDetails' , 'GK.view.SpeakerPageView'],
     config : {
         refs : {
-            speakerdetails: 'speakerdetails'
+            speakerdetails: 'speakerdetails',
+            speakerpage  : 'speakerpage'
         },   
         control : {
          
             'speakerslist' : {
+                itemtap : 'speakerTapped'
+            },
+            'schedulelist' : {
                 itemtap : 'speakerTapped'
             }
        
@@ -26,31 +30,42 @@ Ext.define('GK.controller.SpeakersController', {
      
     showSpeakerDetails : function(id){
         
-        var record = Ext.getStore('Speakers').findRecord('id', id)
-        if(record){
-            record = record.data
-        var comp = this.getSpeakerdetails().getItems();
-        var img = comp.items[0]
-        var title = comp.items[2]
-        var subtitle =comp.items[3]
-        var text = comp.items[4]
+        
+        var store = Ext.getStore('Speakers')  
+        if(store.findRecord('id', id))
+            this.updateSpeakerData(store.findRecord('id', id).data)
+        else   {
+            Ext.getStore('Speakers').load({
+                callback: function(records, operation, success) {
+                    this.updateSpeakerData(records[id-1].data)
+                },
+                scope: this
+            });
+        }
+        
+        
+     //   var record = Ext.getStore('Speakers').findRecord('id', id)
+     
+      
+         
+    },
+    
+     updateSpeakerData : function(record){
+         var comp = this.getSpeakerdetails();
+         this.getSpeakerpage().down('header').setTitle(record.name)
+        var img = comp.down('#promo_img')
+        var title = comp.down('#details_title')
+        var subtitle = comp.down('#details_subtitle') 
+        var text = comp.down('#details_text') 
 
         title.setData({name : record.name})
         subtitle.setData( { conference_name : record.conference_name})
         text.setData({ about_speaker : record.about_speaker})
-        img.setData({img :record.speaker_foto})
+     //   console.log(img)
+        img.setHtml('<img src="'+record.promo_img+'">')
         GK.Viewport.setActiveItem(4)
-    }
-        else{
-            // Debug
-            GK.Viewport.setActiveItem(4)
-    
-    //        GK.Viewport.setActiveItem(2)
          
-         }
-      
-         
-    }
+     }
     
     
    

@@ -4,8 +4,7 @@ Ext.define('GK.view.HeaderView', {
     config : {
         layout: {
             type: 'hbox'
-         //   align: 'center',
-         //   pack : 'center'
+
         },
         docked : 'top',
         items : [ 

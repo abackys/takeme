@@ -20,6 +20,7 @@ Ext.define('GK.view.StartPageView', {
         },
         {
             xtype : 'startpagelist',
+           // styleHtmlContent: true,
             flex : 1,
            
         },

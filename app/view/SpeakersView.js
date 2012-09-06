@@ -3,13 +3,13 @@ Ext.define('GK.view.SpeakersView', {
     xtype  : 'speakers',
     requires: [
     'GK.view.speakers.SpeakersList',
-    'GK.view.speakerpage.SpeakerDetails'
+    'GK.view.details.SpeakerDetails'
     ],
     config : {
         scrollable : false,
 
         layout : 'vbox',
-        items : [ 
+        items : [  
         {
             xtype : 'header',
             title : 'Pranešėjai'
